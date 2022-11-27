@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+body{
+    font-family: Bebas Neue;
+    text-align: center;
+    background-color: beige;
+    animation-name: animacja1;
+    animation-duration: 3s;
+}
+
+
+h1{
+    color: #693;
+    text-align: center;
+    font-size:45px;
+    margin-bottom: 50px;
+}
+.selectniezdrowe{
+    float: left;
+    margin-left: 80px;
+    font-size: 20px
+}
+label{
+    font-size: 20px
+}
+span{
+    color: #bad739;
+}
+p{
+    color: #693;
+}
+.selectzdrowe{
+    float: right;
+    margin-right: 80px;
+    font-size: 20px;
+}
+select{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #2f6627;
+}
+
+#niezdrowe {
+    width: 300px;
+}
+#zdrowe{
+    width: 300px;
+}
+
+button{
+    background-color: #693;
+	border-radius: 28px;
+	border: 2px solid black;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #2f6627;
+}
+button:hover{
+    background-color: #5cbf2a;
+}
+button:active{
+    position: relative;
+	top: 1px;
+}
+
+#container1{
+    border: 2px solid black;
+    width: 400px;
+    background-color: honeydew;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#container1>p{
+    color: black;
+}
+
+#showdiv{
+    width: 850px;
+    height:250px;
+    margin-top: 50px;
+    display: block;
+    background-color: honeydew;
+    border: 2px solid black;
+    position: relative;
+    animation-name: animacja2;
+    animation-duration: 4s;
+}
+@keyframes animacja2 {
+    0%   {right:100%; left:0%;}
+    50%  {right:80%;left:0%;}
+    100% {right:35%; right:0%;}
+}
+
+#showdiv>label{
+    color: black;
+    font-size: 25px;
+    margin-top: 15px;
+}
