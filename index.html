@@ -70,11 +70,21 @@
 		<button type="button" value="oblicz" onclick="obliczanie()">OBLICZ</button><br><br>
 		<label id="lblmess">ZDROWE</label><br>
 		<label id="lblmess1">NIEZDROWE</label><br><br>
+		<form name="formid4" action="kcal"><p style="font-size: 20px; margin-top: 0px;">Wprowadz dzienne zapotrzebowanie energetyczne (kcal)</p>
+			<input name="input4" type="text" value="kcal">
+		</form>
 		<!--<label id="lblmess" style="float: right; margin-right: 10%;">ZDROWE</label>
 		<label id="lblmess1" style="float: left; margin-left: 10%;">NIEZDROWE</label><br><br>-->
-		<center><div id="showdiv">
-			<label id="wynik">TU POWINIEN BYC WYNIK</label>
-		</div></cernter>
+	<center>
+		<div id="showdiv">
+			<label id="wynik">TU POWINIEN BYC WYNIK</label><br>
+			<p id="selectedzap">Wybrane zapotrzebowanie: <label id="selectedzap1"></label></p>
+			<p id="informacje">Musisz zjeść <label id="musiszzjesczdrowe">null</label> wybranego zdrowego produktu, aby zaspokoić swoje dzienne zapotrzebowanie.</p>
+			<p id="informacje2">Musisz zjeść <label id="musiszzjescniezdrowe">null</label> wybranego niezdrowego produktu, aby zaspokoić swoje dzienne zapotrzebowanie.</p>
+			
+		</div>
+	</center>
+
 	</body>
 	
 </html>

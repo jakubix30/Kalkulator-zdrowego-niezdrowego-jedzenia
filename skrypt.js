@@ -15,9 +15,15 @@ function obliczanie()
     if (formid1.ddlselect1.value=="wybieranie" || formid.ddlselect.value=="wybieranie") {
         alert("BŁĄD, najpierw wybierz produkty")}
         else{
+            document.getElementById('showdiv').style.display = "none";
+            document.getElementById('showdiv').style.animationDuration = "1s";
+            document.getElementById('showdiv').style.animationName = "animacja2";
             document.getElementById('showdiv').style.display = "block";
             document.getElementById('wynik').innerHTML=
-            ("Musisz zjesc  "+(Math.round(formid1.ddlselect1.value / formid.ddlselect.value*10)/10) + " wybranego zdrowego produktu aby zastąpić wybranego niezdrowego.")}
+                ("Musisz zjesc  "+(Math.round(formid1.ddlselect1.value / formid.ddlselect.value*10)/10) 
+                + " wybranego zdrowego produktu aby zastąpić wybranego niezdrowego.")};
+            document.getElementById('selectedzap1').innerHTML= formid4.input4.value;
+            document.getElementById('musiszzjesczdrowe').innerHTML = (formid4.input4.value)
 }
 
 /*var li = 12.2352463745124353453
