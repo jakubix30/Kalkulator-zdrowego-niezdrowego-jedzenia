@@ -65,26 +65,26 @@
 		</form>
 		</div>
 		<center>
+		<p id="niedamtu">Autorzy: Patryk Lipiński, Jakub Płatkowski</p>
 		<div id="container1"><p>Witaj, program obliczy ile wybranego zdrowego jedzenia musisz zjeść aby zastąpić wybrane niezdrowe jedzenie.<br> Aby rozpocząć naciśnij przycisk poniżej
 		</p></div></center>
 		<button class="oblicz1" type="button" value="oblicz" onclick="obliczanie()">OBLICZ</button><br><br>
 		<label id="lblmess">ZDROWE</label><br>
 		<label id="lblmess1">NIEZDROWE</label><br><br>
-		<form name="formid4" action="kcal"><p style="font-size: 20px; margin-top: 0px;">Wprowadz dzienne zapotrzebowanie energetyczne (kcal)</p>
-			<input name="input4" type="text" value="kcal">
+		<form name="formid4" action="kcal" id=""><p style="font-size: 20px; margin-top: 0px; line-height:1px;">Wprowadz dzienne zapotrzebowanie energetyczne (kcal)</p>
+			<input name="input4" type="text" value="2000" style="line-height:1px;">
 		</form>
 		<!--<label id="lblmess" style="float: right; margin-right: 10%;">ZDROWE</label>
 		<label id="lblmess1" style="float: left; margin-left: 10%;">NIEZDROWE</label><br><br>-->
 	<center>
 		<div id="showdiv">
-			<label id="wynik">TU POWINIEN BYC WYNIK</label><br>
-			<p id="selectedzap">Wybrane zapotrzebowanie: <label id="selectedzap1"></label></p>
-			<p id="informacje">Musisz zjeść <label id="musiszzjesczdrowe">null</label> wybranego zdrowego produktu, aby zaspokoić swoje dzienne zapotrzebowanie.</p>
-			<p id="informacje2">Musisz zjeść <label id="musiszzjescniezdrowe">null</label> wybranego niezdrowego produktu, aby zaspokoić swoje dzienne zapotrzebowanie.</p>
-			
+			<p>Musisz zjesc  <label class="tak9" id="wynik">TU POWINIEN BYC WYNIK</label> wybranego zdrowego produktu aby zastąpić wybranego niezdrowego.</p><hr>
+			<p id="selectedzap">Wybrane zapotrzebowanie: <label class="tak9" id="selectedzap1"></p>
+			<p id="informacje">Musisz zjeść <label class="tak9" id="musiszzjesczdrowe">null</label> wybranego zdrowego produktu, aby zaspokoić swoje dzienne zapotrzebowanie.</p>
+			<p id="informacje2">Musisz zjeść <label class="tak9" id="musiszzjescniezdrowe">null</label> wybranego niezdrowego produktu, aby zaspokoić swoje dzienne zapotrzebowanie.</p>
 		</div>
 	</center>
-		<button class="reset" type="button" value="reset" onclick="document.location.reload(true)">RESET</button>
+		<a class="reset" href="index.html">RESET</a>
 	</body>
 	
 </html>

@@ -77,8 +77,8 @@ select{
 	cursor: pointer;
 	color: white;
 	font-family: Arial;
-	font-size: 10px;
-	padding: 10px 20px;
+	font-size: 15px;
+	padding: 20px 30px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #662727;
 }
@@ -86,8 +86,7 @@ select{
     background-color: #bf2a2a;
 }
 .reset:active{
-    position: relative;
-	top: 1px;
+    background-color: #d53737;
 }
 
 #container1{
@@ -105,13 +104,13 @@ select{
 
 #showdiv{
     width: 850px;
-    height:200px;
-    margin-top: 35px;
-    padding: 15px;
+    height:160px;
+    margin-top: 5px;
     background-color: honeydew;
     border: 2px solid black;
     position: relative;
     display: none;
+    line-height: 2px;
 }
 @keyframes animacja2 {
     0%    {left: 90%;}
@@ -120,15 +119,8 @@ select{
     100% {right:0%;}
 }
 
-#showdiv>label{
-    color: black;
-    font-size: 25px;
-}
 
-#showdiv>p{
-    color: black;
-    font-size: 25px;
-}
+
 input[type=text]{
     width: 20%;
     padding: 12px;
@@ -168,4 +160,23 @@ input[type=text]:focus{
     #container1{
         margin: 3%;
     }
+}
+
+
+#showdiv>p{
+    line-height: 2px;
+    color: black;
+    font-size: 25px;
+}
+
+.tak9{
+    line-height: 2px;
+    color: rgb(93, 0, 255);
+    font-size: 25px;
+}
+
+#niedamtu{
+    color: black;
+    font-size: 20px;
+    line-height: 0px;
 }
