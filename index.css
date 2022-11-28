@@ -16,7 +16,7 @@ h1{
 }
 .selectniezdrowe{
     float: left;
-    margin-left: 80px;
+    margin-left: 5%;
     font-size: 20px
 }
 label{
@@ -30,7 +30,7 @@ p{
 }
 .selectzdrowe{
     float: right;
-    margin-right: 80px;
+    margin-right: 5%;
     font-size: 20px;
 }
 select{
@@ -82,7 +82,7 @@ button:active{
 
 #showdiv{
     width: 850px;
-    height:250px;
+    height:200px;
     margin-top: 50px;
     display: block;
     background-color: honeydew;
@@ -101,4 +101,30 @@ button:active{
     color: black;
     font-size: 25px;
     margin-top: 15px;
+}
+@media screen and (max-width: 1150px){
+    .selectzdrowe{
+        float: right;
+        margin-right: 10%;
+    }
+    .selectniezdrowe{
+        float: left;
+        margin-left: 10%;
+    }
+    #container1{
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .selectzdrowe{
+        float: none;
+        margin: 0% 0% 2% 0%;
+    }
+    .selectniezdrowe{
+        float: none;
+        margin: auto;
+    }
+    #container1{
+        margin: 3%;
+    }
 }
