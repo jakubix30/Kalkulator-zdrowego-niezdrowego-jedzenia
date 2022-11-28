@@ -23,7 +23,8 @@ function obliczanie()
                 ("Musisz zjesc  "+(Math.round(formid1.ddlselect1.value / formid.ddlselect.value*10)/10) 
                 + " wybranego zdrowego produktu aby zastąpić wybranego niezdrowego.")};
             document.getElementById('selectedzap1').innerHTML= formid4.input4.value;
-            document.getElementById('musiszzjesczdrowe').innerHTML = (formid4.input4.value)
+            document.getElementById('musiszzjesczdrowe').innerHTML = (Math.round(formid4.input4.value / formid.ddlselect.value*10)/10);
+            document.getElementById('musiszzjescniezdrowe').innerHTML = Math.round(formid4.input4.value / formid1.ddlselect1.value*10)/10;
 }
 
 /*var li = 12.2352463745124353453
